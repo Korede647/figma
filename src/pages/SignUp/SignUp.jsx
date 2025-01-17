@@ -76,12 +76,12 @@ const handleSubmit = () => {
 
          <div className='button'>
          <button className='butt2'>
-          <IoLogoApple /> 
+          <IoLogoApple style={{fontSize: "22px"}} /> 
           <p>Sign up with Apple</p>
           </button>
            
            <button className='butt2'>
-           <FcGoogle /> 
+           <FcGoogle style={{fontSize: "20px"}} /> 
            <p>Sign up with Google</p>
            </button>
          </div>

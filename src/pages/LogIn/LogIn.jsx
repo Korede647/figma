@@ -16,17 +16,17 @@ const handleSubmit = () => {
 }
 
   return (
-    <div className='mainDiv'>
+    <div className='mainDiv2'>
     
-       <form className='formDiv' onSubmit={handleSubmit}>
-          <div className='textHead'>
+       <form className='formDiv2' onSubmit={handleSubmit}>
+          <div className='textHead2'>
           <h1>Welcome to Equipment.ng</h1>
           <p>Log in to Equipment.ng</p>
           </div>
 
          
           <input 
-          className='input'
+          className='input2'
           type="text" 
           placeholder='Email'
           value={email}
@@ -43,29 +43,34 @@ const handleSubmit = () => {
           <LuEyeClosed style={{color: "#4B5563"}}/>
          </div>
 
-          <div className='agree'>
+          <div className='agree2'>
           <input type="checkbox"/>
            <p>
            Remember me
+           <b className='pwforgot'>Forgot Password?</b>
            </p>
-           <b>Forgot Password?</b>
+          
           </div>
 
-          <Button class="butt" text="Log In"/>
+          <Button text="Log In"/>
 
-         <div className='button'>
-         <button className='butt2'>
-          <IoLogoApple /> 
+         <div className='button2'>
+         <button className='butt3'>
+          <IoLogoApple style={{fontSize: "22px"}} /> 
           <p>Sign up with Apple</p>
           </button>
            
-           <button className='butt2'>
-           <FcGoogle /> 
+           <button className='butt3'>
+           <FcGoogle style={{fontSize: "20px"}} /> 
            <p>Sign up with Google</p>
            </button>
          </div>
 
-         <p>Dont Have An Account? <Link><b>Create an account</b></Link></p>
+         <p className='account'>Dont have an account? 
+          {/* <Link  className="link" to="/signUp"> */}
+          <b>Create an account</b>
+          {/* </Link> */}
+          </p>
 
            
            

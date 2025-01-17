@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Matemasie&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-.mainDiv{
+.mainDiv2{
     width: 100%;
     height: 100%;
     display: flex;
@@ -11,22 +10,20 @@
     font-family: "Poppins", serif;
 }
 
-.formDiv{
+.formDiv2{
     width: 450px;
-    height: 714px;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     font-family: "Poppins", serif;
 }
 
-.textHead{
+.textHead2{
     width: 100%;
-    height: 80px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +32,7 @@
     font-family: "Poppins", serif;
 }
 
-.input{
+.input2{
     width: 440px;
     height: 60px;
     border: solid #EFEFF1 2px;
@@ -57,21 +54,26 @@
     font-family: "Poppins", serif;
 }
 
-.agree{
+.agree2{
     width: 440px;
     color: #4B5563;
     display: flex;
     gap: 12px;
+    font-family: "Poppins", serif;
 }
 
-.button{
+.pwforgot{
+    padding-left: 145px;
+}
+
+.button2{
     width: 100%;
     height: max-content;
     display: flex;
     justify-content: center;
     gap: 10px;
 }
-.butt2{
+.butt3{
     width: 40%;
     height: 40px;
     border: solid 1px #9CA3AF;
@@ -83,9 +85,24 @@
     gap: 13px;
     font-family: "Poppins", serif;
 }
-.butt2:hover{
+.butt3:hover{
     cursor: pointer;
 }
-.butt2> p{
+.butt3> p{
     color: #484b50;
+}
+
+.account{
+    color: #6D7280;
+    font-size: 13px;
+    font-family: "Poppins", serif;
+}
+
+.account > b{
+    padding-left: 3px;
+}
+
+.link:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }

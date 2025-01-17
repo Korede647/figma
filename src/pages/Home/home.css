@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Matemasie&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/helvetica-255');
+
+.homeMain{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+nav{
+    width: 100%;
+    height: 75px;
+    background-color: #4B5563;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navSub{
+   width: 90%;
+   height: 52px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo{
+    width: 163px;
+    height: 38px;
+}
+.logo> img{
+    width: 100%;
+    height: 100%;
+}
+
+.right{
+    width: 338px;
+    height: 52px;
+    display: flex;
+    gap: 32px;
+}
+.right> button{
+    width: 171px;
+    height: 52px;
+    background-color: #6D7280;
+    border: none;
+    border-radius: 100px;
+    color: #F3F4F9;
+    font-family: "Inter", serif;
+}
+
+.icon{
+    width: 51px;
+    height: 51px;
+    border-radius: 23px;
+    padding: 8px;
+    gap: 10px;
+    background-color: #6D7280;
+}
+
+.icon>img{
+    width: 32px;
+    height: 32px;
+}
+
+.profile{
+    width: 52px;
+    height: 52px;
+}
+.profile> img{
+    width: 100%;
+    height: 100%;
+}
+
+.heroSection{
+   width: 100%;
+   height: 309px;
+   background-color: #1F2937;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+.hire{ 
+    width: 431px;
+    height: 48px;
+    font-family: "Helvetica", sans-serif;
+    color: #FFFFFF;
+    font-size: 32px;
+    Top: 129px;
+}
+
+.search{
+    width: 507px;
+    height: 56px;
+    border: 2px solid #EFEFF1;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search> input{
+    width: 459px;
+    height: 24px;
+    font-family: "Inter", serif;
+    font-size: 14px;
+    color: #1F2937;
+    border: none;
+    outline: none;
+}
+
+.search>img{
+    width: 20px;
+    height: 20px;
+}
+
+.heroContent{
+    width: 458px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.filter{
+    width: 70px;
+    height: 30px;
+    color: #111827;
+    font-family: "Inter", serif;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.filter> p{
+    width: 50px;
+    height: 15px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.sects{
+    width: 373px;
+    height: 30px;
+    background-color: #FFFFFF;
+    display: flex;
+    gap: 60px;
+    border-radius: 4px;
+    border: none;
+    padding-top: 3px;
+    padding-left: 12px;
+    padding-bottom: 10px;
+    font-family: "Inter", serif;
+}
+
+.location{
+    width: 83px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.price{
+    width: 63px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.category{
+    width: 87px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.location>p, .price>p, .category>p{
+    color: #374151;
+    font-size: 12px;
+    height: 15px;
+    font-family: "Inter", serif;
+}
+
+.icons{
+    width: 24px;
+    height: 24px;
+    color: #4B5563;
+    font-size: 13px;
+}
+
+.list{
+    width: 1160px;
+    height: 325px;
+    border-radius: 8px;
+    margin-top: 30px;
+    color: #F9F9F9;
+}
+
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #030D4700, #000000);
+    border-radius: 8px;
+}
+
+.item{
+    width: 706px;
+    height: 178px;
+    gap: 16px;
+    position: relative;
+    top: 92px;
+    left: 102px;
+}
+
+.item>h2{
+    width: 706px;
+    height: 56px;
+    font-family: "Helvetica", sans-serif;
+    font-size: 40px;
+    color: #FDFEFF;
+    line-height: 56px;
+}
+
+.item>h5{
+    width: 706px;
+    height: 64px;
+    font-family: "Helvetica", sans-serif;
+    font-size: 20px;
+    color: #FDFEFF;
+    line-height: 32px;
+}
+
+.item> button{
+    width: 204px;
+    height: 42px;
+    border-radius: 100px;
+    border: none;
+    background-color: #6D7280;
+    color: #FDFEFF;
+    font-family: "Inter", serif;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.steel{
+    width: 1160px;
+    height: 345px;
+    padding: 10px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 20px;
+}
