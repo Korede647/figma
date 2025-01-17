@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.mainDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", serif;
+}
+
+.formDiv{
+    width: 450px;
+    height: 720px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: "Poppins", serif;
+}
+
+.textHead{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: "Poppins", serif;
+}
+
+.input{
+    width: 440px;
+    height: 60px;
+    border: solid #EFEFF1 2px;
+    border-radius: 8px;
+    padding-top: 16px;
+    padding-left: 12px;
+    padding-bottom: 16px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", serif;
+}
+
+#pw{
+    width: 390px;
+    height: 20px;
+    border: none;
+    outline: none;
+    font-family: "Poppins", serif;
+}
+
+.agree{
+    width: 440px;
+    color: #4B5563;
+    display: flex;
+    gap: 12px;
+}
+
+.agree > p{
+    font-size: 13px;
+}
+
+.button{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.butt2{
+    width: 40%;
+    height: 40px;
+    border: solid 1px #9CA3AF;
+    border-radius: 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    font-family: "Poppins", serif;
+}
+.butt2:hover{
+    cursor: pointer;
+}
+.butt2> p{
+    color: #484b50;
+}
