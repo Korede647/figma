@@ -265,3 +265,153 @@ nav{
     grid-template-columns: repeat(5, 1fr);
     margin-top: 20px;
 }
+
+
+@media screen and (max-width: 1200px) {
+   .steel{
+    width: 90%;
+    height: max-content;
+    grid-template-columns: repeat(4, 1fr);
+   } 
+
+   .list{
+    width: 90%;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+    .steel{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .list{
+        height: 350px;
+    }
+    .item{
+        width: 90%;
+        height: 85%;
+        left: 90px;
+    }
+    .item> h2, .item>h5{
+        width: 95%;
+        height: 23%;
+    }
+    .item>h2{
+        font-size: 35px;
+        line-height: 53px;
+    }
+    .item>h5{
+        font-size: 17px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+   .steel{
+    width: 98%;
+    gap: 10px;
+    padding-left: 0px;
+   }
+   .list{
+    width: 95%;
+   }
+   .item{
+    left: 50px;
+    gap: 10px;
+   }
+   .item>h2{
+    font-size: 32px;
+    line-height: 45px;
+   }
+   .item> h5{
+    font-size: 15px;
+    line-height: 23px;
+   }
+   .hire{
+    font-size: 30px;
+   }
+   .search{
+    width: 495px;
+   }
+   .search> input{
+    width: 450px;
+}
+}
+
+@media screen and (max-width: 650px) {
+    .steel{
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .navSub{
+        justify-content: center;
+    }
+    .right>button, .icon{
+        visibility: hidden;
+    }
+    .item{
+        left: 30px;
+    }
+     .item>h2{
+        font-size: 28px;
+        line-height: 40px;
+     }
+     .item>button{
+        margin-top: 15px;
+     }
+}
+
+@media screen and (max-width: 550px) {
+    .item>h5{
+       line-height: 20px;
+    }
+    .item>h2{
+        line-height: 35px;
+        height: 27%;
+    }
+    .search{
+        width: 90%;
+    }
+    .search>input{
+        width: 85%;
+    }
+    .heroContent{
+        width: 75%;
+        gap: 14px;
+    }
+    .sects{
+        width: 80%;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .icons{
+        width: 15px;
+        height: 15px;
+    }
+    .icon{
+        display: none;
+    }
+    .right>button{
+        width: 65%;
+    }
+    .steel{
+        width: 97%;
+    }
+    .hire{
+        font-size: 27px;
+        margin-left: 17%;
+    }
+    .sects{
+        padding-left: 6px;
+    }
+    .location, .price, .category{
+        gap: 6px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .steel{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
