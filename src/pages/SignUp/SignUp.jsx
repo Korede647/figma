@@ -6,6 +6,7 @@ import { FcGoogle } from "react-icons/fc";
 import Button from '../../components/Button/Button';
 
 
+
 const SignUp = () => {
 
 const [surname, setSurname] = useState("");
@@ -72,7 +73,7 @@ const handleSubmit = () => {
            </p>
           </div>
 
-          <Button class="butt" text="Sign Up to Equipment.ng"/>
+          <Button link="/login" text="Sign Up to Equipment.ng"/>
 
          <div className='button'>
          <button className='butt2'>

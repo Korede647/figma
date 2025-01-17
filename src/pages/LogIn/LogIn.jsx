@@ -5,7 +5,7 @@ import { LuEyeClosed } from "react-icons/lu";
 import { IoLogoApple } from "react-icons/io";
 import { FcGoogle } from "react-icons/fc";
 import Button from '../../components/Button/Button';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const LogIn = () => {
 const [email, setEmail] = useState("");
@@ -52,7 +52,9 @@ const handleSubmit = () => {
           
           </div>
 
-          <Button text="Log In"/>
+         
+         <Button link="/home" text="Log In"/>
+          
 
          <div className='button2'>
          <button className='butt3'>

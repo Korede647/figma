@@ -1,4 +1,5 @@
 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home/Home'
 import LogIn from './pages/LogIn/LogIn'
@@ -9,9 +10,15 @@ function App() {
   return (
     <>
 
-    {/* <SignUp/> */}
-    {/* <LogIn/> */}
-    <Home/>
+<Router>
+<Routes>
+      <Route path='/' element={<SignUp/>}/>
+      <Route path='/login' element={<LogIn/> }/>
+      <Route path='/home' element={<Home/>}/>
+    </Routes>
+</Router>
+   
+    
      
     </>
   )
