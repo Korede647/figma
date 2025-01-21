@@ -1,17 +1,28 @@
 
 import React, { useState } from 'react'
 import "./Login.css"
-import { LuEyeClosed } from "react-icons/lu";
+import { LuEye, LuEyeClosed } from "react-icons/lu";
 import { IoLogoApple } from "react-icons/io";
 import { FcGoogle } from "react-icons/fc";
 import Button from '../../components/Button/Button';
-import { Link, NavLink } from 'react-router-dom';
 
 const LogIn = () => {
 const [email, setEmail] = useState("");
 const [password, setPassword] = useState("");
 
+const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+
+    const togglePasswordVisibility = () => {
+        setIsPasswordVisible((prev) => !prev);
+    };
+
 const handleSubmit = () => {
+   e.preventDefault();
+
+  if (!email || !password ) {
+            setErrorMessage("All fields are required");
+            return;
+        }
   console.log("Form submitted");
 }
 
@@ -30,18 +41,28 @@ const handleSubmit = () => {
           type="text" 
           placeholder='Email'
           value={email}
-          onChange={(e) => setEmail(e.target.value)} />
+          onChange={(e) => setEmail(e.target.value)}
+          required />
 
-         <div className='input'>
-         <input 
-          id='pw'
-          type="text" 
-          placeholder='Password'
-          value={password}
-          onChange={(e) => setPassword(e.target.value)} 
-          />
-          <LuEyeClosed style={{color: "#4B5563"}}/>
-         </div>
+        <div className='input'>
+                 <input 
+                  id='pw'
+                  type={isPasswordVisible ? "text" : "password"}
+                  placeholder='Password'
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)} 
+                  required />
+                  <button className='eye2'
+                  onClick={togglePasswordVisibility}
+                  style={{ cursor: "pointer" }}
+                  >
+                   {isPasswordVisible ? (
+                            <LuEye style={{ color: "#4B5563" }} />
+                        ) : (
+                            <LuEyeClosed style={{ color: "#4B5563" }} />
+                        )}
+                  </button>
+                 </div>
 
           <div className='agree2'>
           <input type="checkbox"/>
@@ -53,7 +74,7 @@ const handleSubmit = () => {
           </div>
 
          
-         <Button link="/home" text="Log In"/>
+         <Button type= "submit" link="/home" text="Log In"/>
           
 
          <div className='button2'>

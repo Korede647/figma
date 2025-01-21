@@ -45,7 +45,17 @@
     outline: none;
     display: flex;
     align-items: center;
+    gap: 1px;
     font-family: "Poppins", serif;
+}
+
+.eye{
+    width: 25px;
+    height: 22px;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
 }
 
 #pw{
