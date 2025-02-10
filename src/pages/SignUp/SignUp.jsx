@@ -20,7 +20,6 @@ const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 const [isConfirmPasswordVisible, setIsConfirmPasswordVisible] = useState(false)
 const [errorMessage, setErrorMessage] = useState("");
 
-const navigate = useNavigate()
 
     const togglePasswordVisibility = () => {
         setIsPasswordVisible((prev) => !prev);

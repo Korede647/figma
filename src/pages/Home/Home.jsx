@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from "axios"
 import "./home.css"
 import Logo from "../../assets/Frame 63.png"
 import Icon from "../../assets/save-add.png"
@@ -11,6 +12,25 @@ import Save from "../../assets/save-add.png"
 import Add from "../../assets/save-addblack.png"
 
 const Home = () => {
+  const [state, setState] = useState([])
+  const [lga, setLga] = useState([])
+
+  useEffect(() => {
+    const fetchData= async () => {
+      const response = await axios.get("http://localhost:5000/api/v1/states/") 
+      if(response.status === 400){
+        setState(response.data)
+        // {
+          console.log(response.data);
+          
+        // }
+      }else{
+        console.log(response.data.message);
+        
+      }
+    }
+    fetchData()
+  }, [])
   return (
     <div className='homeMain'>
 
@@ -94,6 +114,16 @@ const Home = () => {
             <Pipes imgPipe={Add} color= "#FFFFFF"/>
             <Pipes imgPipe={Add} color= "#FFFFFF"/>
         </section>
+
+        <section>
+          <select name="" id={state.id} disabled="disabled">
+            <option value="">{state.name}</option>
+          </select>
+
+          <select name="" id={state.id}>
+            <option value="">{state.lgas}</option>
+          </select>
+          </section>
       
     </div>
   )
