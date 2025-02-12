@@ -4,7 +4,6 @@ import { LuEye, LuEyeClosed } from "react-icons/lu";
 import { IoLogoApple } from "react-icons/io";
 import { FcGoogle } from "react-icons/fc";
 import Button from '../../components/Button/Button';
-import { useNavigate } from 'react-router-dom';
 
 
 
@@ -47,9 +46,6 @@ const handleSubmit = () => {
     setErrorMessage("All fields are required");
     return;
 }
-// else{
-//   navigate('/login')
-// }
     console.log("Form submitted");
 }
 
