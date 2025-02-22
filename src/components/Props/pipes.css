@@ -94,3 +94,9 @@
     line-height: 19.42px;
     color: #6D7280;
 }
+
+@media screen and (max-width: 470px){
+    .pipes{
+        width: 95%
+    }
+}
