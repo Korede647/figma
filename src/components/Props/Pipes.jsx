@@ -7,17 +7,17 @@ const Pipes = (props) => {
     <div className='pipes'> 
     <div className='imageP'
    style={{
-             backgroundImage: `url(${PipeOil})`,
-             backgroundPosition: "center",
+             backgroundImage: `url(${props.Pipe})`,
+             backgroundPosition: "top",
              backgroundRepeat: "no-repeat",
              backgroundSize: "cover"
            }}>
-              <div className="imgI"
+              {/* <div className="imgI"
               style={{
                 backgroundColor: `${props.color}`
               }}>
                   <img src={props.imgPipe}/>
-              </div>
+              </div> */}
             
     </div>
 

@@ -337,7 +337,7 @@ nav{
 }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     .steel{
         width: 90%;
         grid-template-columns: repeat(2, 1fr);
@@ -396,7 +396,7 @@ nav{
         width: 65%;
     }
     .steel{
-        width: 97%;
+        width: 99%;
     }
     .hire{
         font-size: 27px;
@@ -406,13 +406,16 @@ nav{
         padding-left: 6px;
     }
     .location, .price, .category{
-        gap: 6px;
+        gap: 5px;
+    }
+    .homeMain{
+        overflow-x: hidden;
     }
 }
 
 @media screen and (max-width:470px) {
     .steel{
         grid-template-columns: repeat(1, 1fr);
-        align-items: center;
+        padding-left: 5px;
     }
 }

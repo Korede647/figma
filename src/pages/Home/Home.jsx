@@ -8,8 +8,8 @@ import Image from "../../assets/oil.png"
 import { IoIosArrowDown } from "react-icons/io";
 import Search from "../../assets/Search.png"
 import Pipes from '../../components/Props/Pipes'
-import Save from "../../assets/save-add.png"
-import Add from "../../assets/save-addblack.png"
+import Save from "../../assets/Frame 31.png"
+import Add from "../../assets/Frame 30.png"
 
 const Home = () => {
   const [state, setState] = useState([])
@@ -103,16 +103,16 @@ const Home = () => {
         </section>
 
         <section className='steel'>
-            <Pipes imgPipe={Add} color= "#FFFFFF"/>
-            <Pipes imgPipe={Save} color= "#4B5563"/>
-            <Pipes imgPipe={Add} color= "#FFFFFF"/>
-            <Pipes imgPipe={Add} color= "#FFFFFF"/>
-            <Pipes imgPipe={Add} color= "#FFFFFF"/>
-            <Pipes imgPipe={Add} color= "#FFFFFF"/>
-            <Pipes imgPipe={Add} color= "#FFFFFF"/>
-            <Pipes imgPipe={Save} color= "#4B5563"/>
-            <Pipes imgPipe={Add} color= "#FFFFFF"/>
-            <Pipes imgPipe={Add} color= "#FFFFFF"/>
+            <Pipes Pipe={Add} color= "#FFFFFF"/>
+            <Pipes Pipe={Save} color= "#4B5563"/>
+            <Pipes Pipe={Add} color= "#FFFFFF"/>
+            <Pipes Pipe={Add} color= "#FFFFFF"/>
+            <Pipes Pipe={Add} color= "#FFFFFF"/>
+            <Pipes Pipe={Add} color= "#FFFFFF"/>
+            <Pipes Pipe={Add} color= "#FFFFFF"/>
+            <Pipes Pipe={Save} color= "#4B5563"/>
+            <Pipes Pipe={Add} color= "#FFFFFF"/>
+            <Pipes Pipe={Add} color= "#FFFFFF"/>
         </section>
 
         <section>

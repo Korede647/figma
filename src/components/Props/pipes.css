@@ -32,7 +32,7 @@
 }
 
 .textDiv{
-    width: 216px;
+    width: 100%;
     height: 180px;
     display: flex;
     flex-direction: column;
@@ -95,8 +95,54 @@
     color: #6D7280;
 }
 
+@media screen and (max-width: 700px) {
+    .pipes{
+        width: 100%;
+    }
+    .imageP{
+        width: 100%;
+    }
+    .imgI{
+        left: 80%;
+    }
+}
+
 @media screen and (max-width: 470px){
     .pipes{
-        width: 95%
+        width: 100%;
+        height: 450px;
+    }
+    .imageP{
+        height: 250px;
+    }
+    .textDiv{
+        padding-left: 30px;
+    }
+    .comb{
+        width: 100%;
+    }
+    .first{
+        width: 100%;
+        height: 30px;
+    }
+    .first>h6{
+        font-size: 30px;
+    }
+    .first>p{
+        font-size: 16px;
+    }
+    .second{
+        width: 100%;
+        height: 35px;
+        font-size: 23px;
+        padding-top: 5px;
+    }
+    .third{
+        width: 100%;
+        font-size: 16px;
+        height: max-content;
+    }
+    .fourth{
+        font-size: 16px;
     }
 }
